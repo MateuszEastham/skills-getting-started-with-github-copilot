@@ -142,3 +142,68 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants list styles */
+.participants {
+  margin-top: 12px;
+}
+
+.participants-header {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participants-list li {
+  background: #eef3ff;
+  color: #034;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9em;
+}
+
+.participants-list li.no-participants {
+  background: transparent;
+  color: #666;
+  border-radius: 4px;
+  padding: 0;
+  font-style: italic;
+}
+
+/* make participant item a flexible row with a remove button */
+.participants-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-email {
+  display: inline-block;
+}
+
+.remove-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.remove-btn:hover {
+  background: #e53935;
+}
